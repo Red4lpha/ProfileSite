@@ -11,7 +11,8 @@ const theme = {
   dark: {
     bg: '#05182C',
     bodyFont: '#FFFFFF50',
-    border: '#FFFFFF50'
+    border: '#FFFFFF50',
+    hover: '#FFFFFF95'
   },
   mobile: '768px',
 }
