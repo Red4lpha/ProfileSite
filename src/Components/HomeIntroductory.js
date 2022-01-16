@@ -1,10 +1,16 @@
 import React from 'react'
+import { HomeIntroStyled } from './Styles/HomeIntro.Styled'
 
 const HomeIntroductory = () => {
     return (
-        <div>
-            Home Intro
-        </div>
+        <HomeIntroStyled>
+            <h1>
+                Kevin Shields
+            </h1>
+            <h2>
+                Web Developer
+            </h2>
+        </HomeIntroStyled>
     )
 }
 

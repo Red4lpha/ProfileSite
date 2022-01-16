@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 var(--size5);
-	border-bottom: 1px solid ${({ theme }) => theme.dark.border};
+	border-bottom: 0.5px solid ${({ theme }) => theme.dark.border};
 `
 export const StyledNav = styled.nav`
 	ul {

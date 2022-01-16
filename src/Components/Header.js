@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { StyledHeader, StyledNav } from './Styles/Header.Styled'
 import { StyledSocialIcons } from './Styles/SocialIcons.Styled'
 
 const Header = () => {
+	const headerRef = React.createRef();
+	
+	useEffect(() => {
+		console.log(headerRef.current.clientHeight);
+		console.log(headerRef);
+	});
+
 	return (
-		<StyledHeader>
+		<StyledHeader ref={headerRef}>
 			<section className='logo'>
 				logo
 			</section>

@@ -18,12 +18,14 @@ const theme = {
 }
 
 function App() {
+  //const [headerHeight, setHeaderHeight] = 0;
+  
   return (
     <ThemeProvider theme={ theme }>
       <>
         <GlobalStyles />
-        <Header />
         <Home />
+        <Header />
         <Welcome />
         <Skills />
         <Projects />
