@@ -30,6 +30,7 @@ function App() {
         <Home headerHeight={headerHeight}/>
         <Header setHeaderHeight={setHeaderHeight}/>
         <Welcome />
+        hi
         <Skills />
         <Projects />
         <Contact />

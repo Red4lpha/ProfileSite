@@ -26,3 +26,25 @@ export const StyledNav = styled.nav`
 	}	
 
 `
+export const StyledMobileMenu = styled.nav`
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	font-size: var(--size4);
+	
+	ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	li {
+		display: inline-block;
+		flex-basis: 100%;
+		padding: .75rem 0;
+	}
+	li:hover {
+		color: ${({ theme }) => theme.dark.hover};
+	}	
+`
