@@ -2,12 +2,13 @@ import React, { useEffect } from 'react'
 import { StyledHeader, StyledNav } from './Styles/Header.Styled'
 import { StyledSocialIcons } from './Styles/SocialIcons.Styled'
 
-const Header = () => {
+const Header = ({ setHeaderHeight }) => {
 	const headerRef = React.createRef();
 	
 	useEffect(() => {
-		console.log(headerRef.current.clientHeight);
-		console.log(headerRef);
+		//console.log(headerRef.current.clientHeight);
+		//console.log(headerRef);
+		setHeaderHeight(headerRef.current.clientHeight);
 	});
 
 	return (

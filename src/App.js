@@ -6,6 +6,7 @@ import Welcome from './Components/WelcomeSummary';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import Contact  from './Components/Contact';
+import { useState } from 'react';
 
 const theme = {
   dark: {
@@ -18,14 +19,16 @@ const theme = {
 }
 
 function App() {
-  //const [headerHeight, setHeaderHeight] = 0;
-  
+  //this is used to keep track of the height of the header for use in
+  //calculating homes height(100vh - the headers)
+  const [headerHeight, setHeaderHeight] = useState(0);
+
   return (
     <ThemeProvider theme={ theme }>
       <>
         <GlobalStyles />
-        <Home />
-        <Header />
+        <Home headerHeight={headerHeight}/>
+        <Header setHeaderHeight={setHeaderHeight}/>
         <Welcome />
         <Skills />
         <Projects />
