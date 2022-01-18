@@ -16,10 +16,10 @@ export const StyledNav = styled.nav`
 		/* column-gap: 10px; */
 		font-size: 1rem;
 		text-transform: uppercase;
-		margin: var(--size5);
+		margin: var(--font-xl);
 	}
 	li {
-		padding: 0 var(--size5);
+		padding: 0 var(--font-xl);
     }
 	li:hover {
 		color: ${({ theme }) => theme.dark.hover};
@@ -31,7 +31,7 @@ export const StyledMobileMenu = styled.nav`
 	top: 100%;
 	left: 0;
 	width: 100%;
-	font-size: var(--size4);
+	font-size: var(--font-2xl);
 	
 	ul {
 		display: flex;

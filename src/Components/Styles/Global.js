@@ -5,12 +5,24 @@ const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
   ${normalize}
   :root {
-    --size1: 4.209rem;
+    --font-7xl: 7.478rem;
+    --font-6xl: 5.61rem;
+    --font-5xl: 4.209rem;
+    --font-4xl: 3.157rem;
+    --font-3xl: 2.369rem;
+    --font-2xl: 1.777rem;
+    --font-xl:  1.333rem;
+    --font-base:1rem;
+    --font-xs:  .75rem;
+    --font-2xs: .563rem;
+
+  }
+
+/*   --size1: 4.209rem;
     --size2: 3.157rem;
     --size3: 2.369rem;
     --size4: 1.777rem;
-    --size5: 1.333rem;
-  }
+    --size5: 1.333rem; */
   * {
     box-sizing: border-box;
     margin: 0;
