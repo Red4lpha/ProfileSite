@@ -8,4 +8,8 @@ export const StyledSocialIcons = styled.section`
   svg:hover{
     color: ${({ theme }) => theme.dark.hover};
   }
+
+  @media(max-width: ${({ theme}) => theme.mobile}) {
+		display: none;
+	}
 `

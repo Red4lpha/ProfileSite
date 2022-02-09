@@ -25,13 +25,32 @@ export const StyledNav = styled.nav`
 		color: ${({ theme }) => theme.dark.hover};
 	}	
 
+	@media(max-width: ${({ theme}) => theme.mobile}) {
+		display: none;
+	}
 `
+
+//Mobile Styles
+export const StyledMobileButton = styled.section`
+	display: none;
+	
+	svg{
+		width: var(--font-4xl);
+	}
+
+	@media(max-width: ${({ theme}) => theme.mobile}) {
+		display: inherit;
+	}
+`
+
 export const StyledMobileMenu = styled.nav`
 	position: absolute;
 	top: 100%;
 	left: 0;
 	width: 100%;
 	font-size: var(--font-2xl);
+	text-transform: uppercase;
+	display: ${({ mobileMenuOpened }) => mobileMenuOpened ? 'block' : 'none'};
 	
 	ul {
 		display: flex;
@@ -44,7 +63,18 @@ export const StyledMobileMenu = styled.nav`
 		flex-basis: 100%;
 		padding: .75rem 0;
 	}
-	li:hover {
+	li:not(:last-child):hover {
 		color: ${({ theme }) => theme.dark.hover};
-	}	
+	}
+	//social icons - specially for mobile nav
+	.social-icons svg {
+		width: var(--font-3xl);
+	}
+	.social-icons a:not(:last-child) {
+		margin-right: var(--font-xl);
+	}
+	.social-icons svg:hover {
+		color: ${({ theme }) => theme.dark.hover};
+	} 
+	
 `
