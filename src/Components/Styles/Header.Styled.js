@@ -39,7 +39,32 @@ export const StyledMobileButton = styled.section`
 	}
 
 	@media(max-width: ${({ theme}) => theme.mobile}) {
-		display: inherit;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding: 10px 0;
+	}
+
+	div {
+		width: 2rem;
+		height: .25rem;
+		background-color: ${({ theme }) => theme.dark.border};
+		border-radius: 10px;
+		transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 3px;
+
+		:first-child {
+			transform: ${({ mobileMenuOpened }) => mobileMenuOpened ? 'rotate(45deg)' : 'rotate(0)'};
+		}
+		:nth-child(2) {
+      opacity: ${({ mobileMenuOpened }) => mobileMenuOpened ? '0' : '1'};
+      transform: ${({ mobileMenuOpened }) => mobileMenuOpened ? 'translateX(20px)' : 'translateX(0)'};
+    }
+		:nth-child(3) {
+			transform: ${({ mobileMenuOpened }) => mobileMenuOpened ? 'rotate(-45deg)' : 'rotate(0)'};
+		}
+
 	}
 `
 

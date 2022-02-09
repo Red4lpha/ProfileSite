@@ -41,9 +41,9 @@ const Header = ({ setHeaderHeight }) => {
 	!TODO: Add onclick functionality to hamburger
 		!TODO: put on hamburger div
 		!TODO: add handleMobileClick to this header component
-		TODO: either add visibility via class manipulation 
-		TODO: and React Refs
-		TODO: Or possibility using a boolean within React to show or hide components
+		!TODO: either add visibility via class manipulation 
+		!TODO: and React Refs
+		!TODO: Or possibility using a boolean within React to show or hide components
 	
 	TODO: Handle mobile click to close mobile menu on clicking any of the icons
 		TODO: Optional: Handle outside click to auto close as well	
@@ -75,8 +75,12 @@ const Header = ({ setHeaderHeight }) => {
 				<SocialIcons />
 			</StyledSocialIcons>
 			<StyledMobileButton 
-			onClick={() => setMobileMenuOpened(!mobileMenuOpened)} >
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" width="32" fill="currentColor"><path d="M1 0h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 8h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0-4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg>
+			onClick={() => setMobileMenuOpened(!mobileMenuOpened)} 
+			mobileMenuOpened={mobileMenuOpened}>
+				{/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" width="32" fill="currentColor"><path d="M1 0h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 8h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0-4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg> */}
+				<div />
+				<div />
+				<div />
 			</StyledMobileButton>
 			<StyledMobileMenu ref={mobileMenu} 
 			mobileMenuOpened={mobileMenuOpened}>
