@@ -45,11 +45,11 @@ const Header = ({ setHeaderHeight }) => {
 		!TODO: and React Refs
 		!TODO: Or possibility using a boolean within React to show or hide components
 	
-	TODO: Handle mobile click to close mobile menu on clicking any of the icons
-		TODO: Optional: Handle outside click to auto close as well	
+	!TODO: Handle mobile click to close mobile menu on clicking any of the icons
+		!TODO: Optional: Handle outside click to auto close as well	
 
-	TODO: When hamb is open replaced with X
-		TODO: Optional use an animation	 
+	!TODO: When hamb is open replaced with X
+		!TODO: Optional use an animation	 
 	---------------------------------------------------------------
 	TODO: NAV
 	TODO: Implement breakpoint nav links

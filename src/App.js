@@ -15,7 +15,7 @@ const theme = {
     border: '#FFFFFF50',
     hover: '#FFFFFF95'
   },
-  mobile: '768px',
+  mobile: '769px',
 }
 
 function App() {
