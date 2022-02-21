@@ -4,7 +4,7 @@ import { StyledSocialIcons } from './Styles/SocialIcons.Styled'
 import { NavButtons } from './NavButtons'
 import { SocialIcons } from './SocialIcons'
 import { MobileNav } from './MobileNav'
-import { StyledContainer } from './Styles/Container.styled'
+import { StyledContainer } from './Styles/Container.Styled'
 
 const Header = ({ setHeaderHeight }) => {
 	const headerRef = React.createRef();
@@ -38,6 +38,7 @@ const Header = ({ setHeaderHeight }) => {
 	TODO: Updated social media links
 	TODO: Need to create logo based off figma design
 	TODO: Ensure that the mobile and normal menu are same height(probably based off logo)
+	TODO: Clean up Styled header js file
 	*/
 
 	return (

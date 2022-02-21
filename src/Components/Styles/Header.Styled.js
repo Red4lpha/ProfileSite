@@ -10,7 +10,7 @@ export const StyledHeaderWrapper = styled.div`
 	/* padding: 10px 0; */
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 var(--size5); 
+	padding: 0 var(--font-xl); 
 `
 export const StyledNav = styled.nav`
 	ul {
