@@ -23,4 +23,14 @@ export const StyledWelcomeWrapper = styled.div`
   p {
     font-size: var(--font-base);
   }
+
+  //Mobile
+  @media(max-width: ${({ theme}) => theme.mobile}) {
+		flex-direction: column;
+
+    & > div {
+      padding: 0 20px;
+    }
+	}
+
 `

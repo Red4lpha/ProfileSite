@@ -21,4 +21,18 @@ export const StyledSkills = styled.div`
   & > div:last-child {
     border-right: 0.5px solid ${({ theme }) => theme.dark.border};
   }
+  svg {
+    padding-bottom: 5px;
+  }
+
+  //Mobile
+  @media(max-width: ${({ theme}) => theme.mobile}) {
+		flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+
+    & > div {
+      flex: 1;
+    }
+  }
 `

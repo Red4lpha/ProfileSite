@@ -41,6 +41,7 @@ const GlobalStyles = createGlobalStyle`
     opacity: 0.6;
     line-height: 1.5;
     margin-bottom: 1rem;
+    color: ${({ theme }) => theme.dark.paragraphFont};
   }
   img {
     max-width: 100%;
