@@ -1,13 +1,16 @@
 import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
+
+	border-bottom: 0.5px solid ${({ theme }) => theme.dark.border};
+`
+export const StyledHeaderWrapper = styled.div`
 	display: flex;
 	margin: 0;
 	/* padding: 10px 0; */
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 var(--size5);
-	border-bottom: 0.5px solid ${({ theme }) => theme.dark.border};
+	padding: 0 var(--size5); 
 `
 export const StyledNav = styled.nav`
 	ul {
