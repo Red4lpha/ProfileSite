@@ -3,6 +3,7 @@ import GlobalStyles from './Components/Styles/Global';
 import Header from './Components/Header';
 import Home from './Components/HomeIntroductory';
 import Welcome from './Components/WelcomeSummary';
+import { DescriptionDivider } from './Components/DescriptionDivider';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import Contact  from './Components/Contact';
@@ -13,7 +14,8 @@ const theme = {
     bg: '#05182C',
     bodyFont: '#FFFFFF50',
     border: '#FFFFFF50',
-    hover: '#FFFFFF95'
+    hover: '#FFFFFF95',
+    header: '#FFF'
   },
   mobile: '769px',
 }
@@ -30,7 +32,7 @@ function App() {
         <Home headerHeight={headerHeight}/>
         <Header setHeaderHeight={setHeaderHeight}/>
         <Welcome />
-        hi
+        <DescriptionDivider />
         <Skills />
         <Projects />
         <Contact />

@@ -17,7 +17,6 @@ export const StyledWelcomeWrapper = styled.div`
     border-radius: 50%;
   }
   h2 {
-    color: #fff;
     font-size: var(--font-3xl);
     padding-bottom: 20px;
   }

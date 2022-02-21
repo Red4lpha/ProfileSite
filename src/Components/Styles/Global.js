@@ -55,6 +55,9 @@ const GlobalStyles = createGlobalStyle`
     color: inherit;
     text-decoration: none;
   }
+  h1,h2,h3,h4,h5 {
+    color: ${({ theme }) => theme.dark.header};
+  }
 
 /* 
 Perfect fourth from type-scale.com
