@@ -1,15 +1,13 @@
 import React from 'react'
 import { StyledWelcome, StyledWelcomeWrapper } from './Styles/Welcome.Styled'
 import { StyledContainer } from './Styles/Container.Styled'
-
-/* const TempStyle = styled.div`
-  height: 80vh;
-`; */
+//import photo from '../Media/TestPhoto.jpg'
 
 /* 
 TODO: Insert actual image of me
 TODO: Write up intro statement
 TODO: Try different line spacing and maybe font
+TODO: Work on getting the image to not scale down with a shrinking screen.
 */
 
 const WelcomeSummary = () => {
@@ -18,8 +16,10 @@ const WelcomeSummary = () => {
     <StyledWelcome>
       <StyledContainer>
         <StyledWelcomeWrapper>
-          <div>
-            <img src='./Media/TestPhoto.jpg' alt='Portrait of Kevin' />
+          <div className='photo-container'>
+            {/* <div className='photo' style={{backgroundImage: `url(${photo})`}}
+              alt='Portrait of Kevin' /> */}
+            <img src='./Media/TestPhoto.jpg' alt='Portrait of Kevin' />  
           </div>
           <div>
             <h2>Hello!</h2>

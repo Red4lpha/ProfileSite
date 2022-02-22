@@ -8,14 +8,30 @@ export const StyledWelcomeWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  //gap: 30px;
 
   & > div {
+    //flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    flex-grow: 1;
+  }
+  .photo-container {
+    align-self: stretch;
+    margin: auto 0;
+    flex-shrink: 0;
     flex-basis: 50%;
   }
+
   img {
     border-radius: 50%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
   }
+  
   h2 {
     font-size: var(--font-3xl);
     padding-bottom: 20px;
@@ -27,10 +43,6 @@ export const StyledWelcomeWrapper = styled.div`
   //Mobile
   @media(max-width: ${({ theme}) => theme.mobile}) {
 		flex-direction: column;
-
-    & > div {
-      padding: 0 20px;
-    }
 	}
 
 `

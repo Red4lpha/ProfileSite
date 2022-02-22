@@ -14,7 +14,7 @@ const theme = {
     bg: '#05182C',
     bodyFont: '#FFFFFF50',
     paragraphFont: 'rgba(255,255,255,.7)',
-    border: '#FFFFFF50',
+    border: '#FFFFFF15',
     hover: '#FFFFFF95',
     header: '#FFF'
   },
@@ -25,6 +25,7 @@ const theme = {
 TODO: Create a custom scroll bar
 TODO: Add scrolling animation
 TODO: Fix import warning on CSS global
+TODO: Possibly think about moving skills divider to be under the text within the welcome page
 */
 
 
@@ -40,7 +41,7 @@ function App() {
         <Home headerHeight={headerHeight}/>
         <Header setHeaderHeight={setHeaderHeight}/>
         <Welcome />
-        <DescriptionDivider />
+        <DescriptionDivider /> 
         <Skills />
         <Projects />
         <Contact />

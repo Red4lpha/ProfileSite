@@ -73,6 +73,7 @@ export const StyledMobileButton = styled.section`
 
 export const StyledMobileMenu = styled.nav`
 	position: absolute;
+	margin-top: 1px;
 	top: 100%;
 	width: 100%;
 	left: 0;
@@ -80,7 +81,10 @@ export const StyledMobileMenu = styled.nav`
 	text-transform: uppercase;
 	display: ${({ mobileMenuOpened }) => mobileMenuOpened ? 'block' : 'none'};
 	transition: transform 0.3s ease-in-out;
-	
+	z-index: 10;
+	background-color: ${({ theme }) => theme.dark.bg};
+	border-bottom: 0.5px solid ${({ theme }) => theme.dark.border};
+
 	@media (min-width: ${({ theme }) => theme.mobile}) {
     display: none;
   }
