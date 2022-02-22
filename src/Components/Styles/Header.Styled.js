@@ -3,6 +3,11 @@ import styled from 'styled-components'
 export const StyledHeader = styled.header`
 
 	border-bottom: 0.5px solid ${({ theme }) => theme.dark.border};
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: ${({ theme }) => theme.dark.bg};
+	z-index: 5;
 `
 export const StyledHeaderWrapper = styled.div`
 	display: flex;

@@ -8,6 +8,7 @@ export const StyledWelcomeWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  //align-items: stretch;
   //gap: 30px;
 
   & > div {
@@ -26,10 +27,13 @@ export const StyledWelcomeWrapper = styled.div`
 
   img {
     border-radius: 50%;
-    height: 100%;
+ /*    height: 100%;
     min-height: 100%;
-    min-width: 100%;
+    min-width: 100%; */
+    width: 370px;
+    height: 370px;
     object-fit: cover;
+    //float: right;
   }
   
   h2 {
@@ -43,6 +47,14 @@ export const StyledWelcomeWrapper = styled.div`
   //Mobile
   @media(max-width: ${({ theme}) => theme.mobile}) {
 		flex-direction: column;
+
+    img {
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%; 
+    width: 100%;
+    }
+  
 	}
 
 `
