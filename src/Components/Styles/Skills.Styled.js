@@ -1,34 +1,18 @@
 import styled from "styled-components";
 
 export const StyledSkills = styled.section`
-  padding-top: 30px;
-
+ 
   .skills-wrapper {
-    position: relative;
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-    border: 0.5px solid ${({ theme }) => theme.dark.border};
-    padding: 30px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
   }
-
-  span {
-    position: absolute;
-    top: calc(var(--font-xl) * -.75);
-    left: 2rem;
-    font-size: var(--font-xl);
-    background-color: ${({ theme }) => theme.dark.bg};
-    padding: 0 10px;
-  }
-  h2 {
-    //font-size: var(--font-base);
-    font-size: 1em;
-  }
-
   .box {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     background-color: green;
   }
 `

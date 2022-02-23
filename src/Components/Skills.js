@@ -1,25 +1,33 @@
 import React from 'react'
-import styled from 'styled-components';
 import { StyledSkills } from './Styles/Skills.Styled';
 import { StyledContainer } from './Styles/Container.Styled';
+import { StyledBorder } from './Styles/BorderWrapper.Styled';
 
-const TempStyle = styled.div`
-  height: 70vh;
-`;
 const Skills = () => {
   return (
-    <TempStyle>
-      <StyledSkills>
-        <StyledContainer>
-          <div className='skills-wrapper'>
-            <span><h2>SKILLS</h2></span>
-            <div className='box'></div>
-            <div className='box'></div>
-            <div className='box'></div>
+    <StyledSkills>
+      <StyledContainer>
+        <StyledBorder>
+          <span className='title'><h2>SKILLS</h2></span>
+            <div className='skills-wrapper'>
+            <div className='box'>
+            </div>
+            <div className='box'>
+            </div>
+            <div className='box'>
+            </div>
           </div>
-        </StyledContainer>
-      </StyledSkills>
-    </TempStyle>
+          <div className='skills-wrapper'>
+            <div className='box'>
+            </div>
+            <div className='box'>
+            </div>
+            <div className='box'>
+            </div>
+        </div>
+        </StyledBorder>
+      </StyledContainer>
+    </StyledSkills>
   )
 }
 
