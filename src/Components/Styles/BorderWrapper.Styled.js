@@ -1,23 +1,25 @@
 import styled from "styled-components";
 
 export const StyledBorder = styled.section`
-  margin-top: 30px;
+  margin-top: 50px;
   position: relative;
   border: 0.5px solid ${({ theme }) => theme.dark.border};
   font-size: var(--font-2xl);
-  color: #fff;
+  
+  //Adding side margin for when the screen is below the container size
+  @media screen and (max-width: 954px) {
+    margin: 50px 20px 0 20px;
+}
     
- /*  ::before {
+    /*  ::before {
     content: 'SKILLS';
     position: absolute;
     top: calc(var(--font-2xl) * -.75);
     left: 2rem;
     background-color: ${({ theme }) => theme.dark.bg};
     padding: 0 10px;
-    
     }  */
   
-
   span.title {
     position: absolute;
     top: calc(var(--font-xl) * -.75);
