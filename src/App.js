@@ -36,6 +36,7 @@ TODO: Add scrolling animation
 TODO: Fix import warning on CSS global
 TODO: Possibly think about moving skills divider to be under the text within the welcome page
 TODO: Add a custom favicon
+TODO: Change the container size to be in the theme and then change areas that are affected by it 
 */
 
 
