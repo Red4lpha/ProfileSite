@@ -4,18 +4,20 @@ export const StyledProjects = styled.section`
  
   .project-wrapper {
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+  flex-direction: row;
+  gap: 15px;
   //justify-content: stretch;
   align-items: stretch;
-  padding: 30px 90px;
+  padding: 30px 30px;
   text-align: center;
   
   article {
     flex-basis: 100%;
-    border: 1px solid white;
+    border: 2px solid #0075A2;
     border-radius: 15px;
     padding: 15px;
+    box-shadow: 4px 4px 10px -3px #0080B1;
+    //margin: 0 100px;
     //background-color: ${({ theme }) => theme.dark.border};
 
     & > * {
@@ -57,6 +59,16 @@ export const StyledProjects = styled.section`
       flex-basis: 100%;
     }
   }
+
+  //Mobile
+  @media(max-width: ${({ theme}) => theme.mobile}) {
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  }
+ /*  & > div {
+    flex: 1;
+  } */
 }
   
 `

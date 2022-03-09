@@ -8,7 +8,7 @@ const Projects = () => {
       <StyledProjects>
         <StyledContainer>
           <StyledBorder>
-            <span className='title'><h2>Projects</h2></span>
+            <span className='title'><h2>PROJECTS</h2></span>
             <div className='project-wrapper'>
               <article>
               <img src='./Media/ProjectExample.webp' alt='Project 1' />  
@@ -28,7 +28,21 @@ const Projects = () => {
                 </section>
               </article>
               <article>
-                <h3>Article 2</h3>
+              <img src='./Media/ProjectExample2.webp' alt='Awesome Project 2' />  
+                <h3>Awesome Project 2</h3>
+                <p className='article-skills'>HTML - CSS - JS AWESOMENESS</p>
+                <section className='article-description'>
+                  <ul>
+                    <li>Hey this is super awesome I have actual text</li>
+                    <li>I used HTML, CSS, and JS to make this awesomeness</li>
+                    <li>Dont you wish you can be as awesome as me</li>
+                    <li>Use the awesome API to use some of my awesomeness from this site!</li>
+                  </ul>  
+                </section>
+                <section className='article-links'>
+                  <div>Github Link</div>
+                  <div>Live Site</div>
+                </section>
               </article>
             </div>
           </StyledBorder>
