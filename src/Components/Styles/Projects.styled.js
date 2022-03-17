@@ -12,6 +12,8 @@ export const StyledProjects = styled.section`
   text-align: center;
   
   article {
+    display: flex;
+    flex-direction: column;
     flex-basis: 100%;
     border: 2px solid #0075A2;
     border-radius: 15px;
@@ -28,6 +30,8 @@ export const StyledProjects = styled.section`
       width: 100%;
       max-height: 350px;
       padding-top: 0;
+      //padding: 2px 2px;
+
     }
     h3 {
       font-size: var(--font-2xl);
@@ -40,9 +44,13 @@ export const StyledProjects = styled.section`
       text-align: left;
       padding: 0 40px;
       color: ${({ theme }) => theme.dark.paragraphFont};
+      //min-height: 210px;
+      flex-basis: 100%;
     }
     ul {
       list-style: square;
+      display: table;
+      margin: auto 0;
     }
     li {
       padding-bottom: 10px;

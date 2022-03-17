@@ -37,6 +37,7 @@ const Projects = () => {
                     <li>I used HTML, CSS, and JS to make this awesomeness</li>
                     <li>Dont you wish you can be as awesome as me</li>
                     <li>Use the awesome API to use some of my awesomeness from this site!</li>
+                    <li>Use the awesome API to use some of my awesomeness from this site!</li>
                   </ul>  
                 </section>
                 <section className='article-links'>
