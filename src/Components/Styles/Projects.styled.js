@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledProjects = styled.section`
  
   .project-wrapper {
+  position: relative;  
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -11,6 +12,22 @@ export const StyledProjects = styled.section`
   padding: 30px 30px;
   text-align: center;
   
+  .project-buttons {
+    position: absolute;
+    font-size: 125px;
+    background-color: inherit;
+    border: 0;
+    color: inherit;
+  }
+  .left {
+    left: -5%;
+    top: calc(50% - 62px);
+  }
+  .right {
+    right: -5%;
+    top: calc(50% - 62px);
+  }
+
   article {
     display: flex;
     flex-direction: column;
@@ -18,10 +35,12 @@ export const StyledProjects = styled.section`
     border: 2px solid #0075A2;
     border-radius: 15px;
     padding: 15px;
-    box-shadow: 4px 4px 10px -3px #0080B1;
     //margin: 0 100px;
     //background-color: ${({ theme }) => theme.dark.border};
 
+    &:hover{
+      box-shadow: 4px 4px 10px -3px #0080B1;
+    }
     & > * {
       padding-top: 10px;
     }

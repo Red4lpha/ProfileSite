@@ -26,6 +26,20 @@ export const projectList = [
     codeLink: "",
     siteLink: ""
   },
+  {
+    img: "./Media/ProjectExample2.webp",
+    name: "Awesome Project 3",
+    tech: "HTML - CSS - JS AWESOMENESS",
+    description: [
+      "Hey this is super awesome I have actual text",
+      "I used HTML, CSS, and JS to make this awesomeness",
+      "Dont you wish you can be as awesome as me",
+      "Use the awesome API to use some of my awesomeness from this site!",
+      "Use the awesome API to use some of my awesomeness from this site!",
+    ],
+    codeLink: "",
+    siteLink: ""
+  },
 ]
 
 export default projectList;
