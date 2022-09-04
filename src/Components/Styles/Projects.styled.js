@@ -32,14 +32,20 @@ export const StyledProjects = styled.section`
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    border: 2px solid #0075A2;
+    //border: 2px solid #0075A2; - old style
+    border: 0.5px solid ${({ theme }) => theme.dark.border};
     border-radius: 15px;
     padding: 15px;
     //margin: 0 100px;
     //background-color: ${({ theme }) => theme.dark.border};
 
     &:hover{
-      box-shadow: 4px 4px 10px -3px #0080B1;
+      border: 1px solid ${({ theme }) => theme.dark.hoverBlue};
+      box-shadow: 2px 2px 10px -3px #0080B1;
+
+      h3 {
+        color: ${({ theme }) => theme.dark.hoverBlue};
+      }
     }
     & > * {
       padding-top: 10px;
