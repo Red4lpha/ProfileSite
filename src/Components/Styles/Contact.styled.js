@@ -9,7 +9,7 @@ export const StyledContact = styled.section`
   align-items: flex-start;
   padding: 30px;
   font-size: var(--font-base);
-  }
+  
     h3 {
       padding-bottom: 20px;
     }
@@ -27,6 +27,8 @@ export const StyledContact = styled.section`
     }
     label {
       padding-bottom: 5px;
+      padding-left: 5px;
+      font-weight: bold;
     }
     textarea:focus, input:focus{
       outline: 0.5px solid ${({ theme }) => theme.dark.hoverBlue}
@@ -55,9 +57,6 @@ export const StyledContact = styled.section`
     .form-button {
       margin-top: 10px;
       padding: 10px 55px;
-      //background-color: ${({ theme }) => theme.dark.bodyFont};
-      //background-color: ${({ theme }) => theme.dark.hoverBlue};
-      //border: 1px solid ${({ theme }) => theme.dark.hoverBlue};
       border: 1px solid ${({ theme }) => theme.dark.bodyFont};
       background-color: inherit;
       border-radius: 5px;
@@ -112,12 +111,54 @@ export const StyledContact = styled.section`
       li {
         padding: 7px;
         color: ${({ theme }) => theme.dark.paragraphFont};
+        display: flex;
+        justify-content: flex-start;
       }
       svg {
         margin-right: 10px;
         fill: ${({ theme }) => theme.dark.hoverBlue};
+        font-size: 1.2em;
 
       }
     }
+    //Mobile
+    @media(max-width: ${({ theme}) => theme.mobile}) {
+      flex-direction: column;
+
+      .contact-form{
+        flex-basis: 100%;
+        width: 100%;
+        border-right: 0;
+        padding: 0;
+      }
+
+      .contact-info{
+        flex-basis: 100%;
+        width: 100%;
+        padding-top: 20px;
+
+        img {
+          display: none;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+
+          li {
+            width: 100%;
+            justify-content: center;
+          }
+
+          & > *:not(:last-child) {
+            border-bottom: 0;
+            border-right: 0.5px solid ${({ theme }) => theme.dark.border};
+          }
+        }
+      }
+    }
+  }
 
 `

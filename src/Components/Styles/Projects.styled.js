@@ -36,6 +36,10 @@ export const StyledProjects = styled.section`
     border: 0.5px solid ${({ theme }) => theme.dark.border};
     border-radius: 15px;
     padding: 15px;
+    max-width: 450px;
+    min-height: 680px;
+    margin: 0 auto;
+    justify-content: center;
     //margin: 0 100px;
     //background-color: ${({ theme }) => theme.dark.border};
 
@@ -71,6 +75,7 @@ export const StyledProjects = styled.section`
       color: ${({ theme }) => theme.dark.paragraphFont};
       //min-height: 210px;
       flex-basis: 100%;
+      flex-grow: 2;
     }
     ul {
       list-style: square;
