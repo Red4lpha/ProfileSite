@@ -7,6 +7,7 @@ import { DescriptionDivider } from './Components/DescriptionDivider';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import Contact  from './Components/Contact';
+import Footer  from './Components/Footer';
 import { useState } from 'react';
 import theme from './Components/Styles/theme';
 
@@ -37,6 +38,7 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
+        <Footer />
       </>
     </ThemeProvider>
   );

@@ -33,7 +33,7 @@ export const StyledNav = styled.nav`
 		color: ${({ theme }) => theme.dark.hover};
 	}	
 
-	@media(max-width: ${({ theme}) => theme.mobile}) {
+	@media(max-width: ${({ theme}) => theme.tablet}) {
 		display: none;
 	}
 `
@@ -46,7 +46,7 @@ export const StyledMobileButton = styled.section`
 		width: var(--font-4xl);
 	}
 
-	@media(max-width: ${({ theme}) => theme.mobile}) {
+	@media(max-width: ${({ theme}) => theme.tablet}) {
 		display: flex;
 		flex-direction: column;
 		gap: 5px;
@@ -90,7 +90,7 @@ export const StyledMobileMenu = styled.nav`
 	background-color: ${({ theme }) => theme.dark.bg};
 	border-bottom: 0.5px solid ${({ theme }) => theme.dark.border};
 
-	@media (min-width: ${({ theme }) => theme.mobile}) {
+	@media (min-width: ${({ theme }) => theme.tablet}) {
     display: none;
   }
 

@@ -25,8 +25,8 @@ export const StyledSkills = styled.div`
     padding-bottom: 5px;
   }
 
-  //Mobile
-  @media(max-width: ${({ theme}) => theme.mobile}) {
+  //? Tablet
+  @media(max-width: ${({ theme}) => theme.tablet}) {
 		flex-direction: column;
     justify-content: stretch;
     align-items: stretch;

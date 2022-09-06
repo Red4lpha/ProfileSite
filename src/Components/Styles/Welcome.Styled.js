@@ -45,7 +45,7 @@ export const StyledWelcomeWrapper = styled.div`
   }
 
   //Mobile
-  @media(max-width: ${({ theme}) => theme.mobile}) {
+  @media(max-width: ${({ theme}) => theme.tablet}) {
 		flex-direction: column;
 
     img {

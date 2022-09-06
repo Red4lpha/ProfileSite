@@ -9,7 +9,7 @@ export const StyledSocialIcons = styled.section`
     color: ${({ theme }) => theme.dark.hover};
   }
 
-  @media(max-width: ${({ theme}) => theme.mobile}) {
+  @media(max-width: ${({ theme}) => theme.tablet}) {
 		display: none;
 	}
 `

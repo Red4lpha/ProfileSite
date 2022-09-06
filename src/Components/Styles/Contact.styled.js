@@ -4,7 +4,7 @@ export const StyledContact = styled.section`
   .contact-wrapper {
   display: flex;
   flex-direction: row;
-  //gap: 40px;
+  //gap: 20px;
   justify-content: center;
   align-items: flex-start;
   padding: 30px;
@@ -33,11 +33,12 @@ export const StyledContact = styled.section`
     textarea:focus, input:focus{
       outline: 0.5px solid ${({ theme }) => theme.dark.hoverBlue}
     }
-    //Contact form section ----------------
+    //?Contact form section ----------------
     .contact-form {
       flex-basis: 75%;
       border-right: 0.5px solid ${({ theme }) => theme.dark.border};
       padding-right: 20px;
+      //padding: 30px;
     } 
     .contact-form-top {
       display: flex;
@@ -68,6 +69,7 @@ export const StyledContact = styled.section`
       display: flex;
       align-items: center;
       gap: 10px;
+      //padding: 30px;
 
       svg {
         stroke-width: 1px;
@@ -83,7 +85,7 @@ export const StyledContact = styled.section`
     }
 
 
-    //Contact Info section ---------------------
+    //?Contact Info section ---------------------
     .contact-info {
       flex-basis: 25%;
       padding-left: 20px;
@@ -121,21 +123,24 @@ export const StyledContact = styled.section`
 
       }
     }
-    //Mobile
-    @media(max-width: ${({ theme}) => theme.mobile}) {
+    //?Tablet
+    @media(max-width: ${({ theme}) => theme.tablet}) {
       flex-direction: column;
+
 
       .contact-form{
         flex-basis: 100%;
         width: 100%;
         border-right: 0;
-        padding: 0;
+        padding: 0 0 20px 0;
+        
       }
 
       .contact-info{
         flex-basis: 100%;
         width: 100%;
-        padding-top: 20px;
+        //padding-top: 20px;
+        border: 0.5px solid ${({ theme }) => theme.dark.border};
 
         img {
           display: none;
@@ -159,6 +164,29 @@ export const StyledContact = styled.section`
         }
       }
     }
-  }
 
+    //?Mobile
+    @media(max-width: ${({ theme}) => theme.mobile}) {
+      padding: 10px;
+
+      .contact-form {
+        padding-top: 10px;
+
+        .contact-form-top {
+          flex-direction: column;
+        }
+      }
+
+      .contact-info {
+      padding: 0;  
+      border: 0;  
+        ul {
+          flex-direction: column;
+
+          & > li:not(:last-child) {
+            border-bottom: 0.5px solid ${({ theme }) => theme.dark.border};
+            border-right: 0;
+      }
+    }
+  
 `

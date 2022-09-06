@@ -8,7 +8,8 @@ export const theme = {
     header: '#FFF',
     hoverBlue: '#1e87f0',
   },
-  mobile: '769px',
+  tablet: '769px',
+  mobile: '479px'
 }
 
 /* dark: {

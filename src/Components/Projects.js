@@ -6,7 +6,7 @@ import Project from './Project';
 import projectList from './projectList';
 import theme from './Styles/theme';
 
-let mobileWidth = parseInt(theme.mobile);
+let mobileWidth = parseInt(theme.tablet);
 
 const Projects = () => {
   const [numOfProjsDisplayed, setNumOfProjsDisplayed]  = useState(mobileWidth > window.innerWidth ? 1 : 2);
