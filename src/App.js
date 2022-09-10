@@ -19,12 +19,14 @@ TODO: Possibly think about moving skills divider to be under the text within the
 TODO: Add a custom favicon
 TODO: Change the container size to be in the theme and then change areas that are affected by it 
 TODO: Center the description part of the article within projects
+TODO: Do loading for contact messages
+TODO: Do error and success messages for contact messages
 */
 
 
 function App() {
-  //this is used to keep track of the height of the header for use in
-  //calculating homes height(100vh - the headers)
+  //?this is used to keep track of the height of the header for use in
+  //?calculating homes height(100vh - the headers)
   const [headerHeight, setHeaderHeight] = useState(0);
 
   return (

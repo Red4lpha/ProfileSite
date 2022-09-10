@@ -20,13 +20,13 @@ export const StyledHeaderWrapper = styled.div`
 export const StyledNav = styled.nav`
 	ul {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 		/* column-gap: 10px; */
 		font-size: 1rem;
 		text-transform: uppercase;
-		margin: var(--font-xl);
+		margin: var(--font-xl) 0;
 	}
-	li {
+	li:not(:last-child) {
 		padding: 0 var(--font-xl);
     }
 	li:hover {

@@ -3,33 +3,48 @@ import { StyledContainer } from './Styles/Container.Styled';
 import { StyledBorder } from './Styles/BorderWrapper.Styled';
 import { AiOutlineMail, AiOutlineLinkedin, AiOutlineAim} from "react-icons/ai";
 import { BsArrowRightCircle } from "react-icons/bs";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target)
+
+    emailjs.sendForm('gmail', 'template_icx9n4e', e.target, 'Z3pSJNxwtQ3KdHY2m')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    e.target.reset();
+  }
   return (
     <StyledContact>
       <StyledContainer>
           <StyledBorder>
           <span className='title'><h2>CONTACT ME</h2></span>
           <div className='contact-wrapper'>
-            <section className='contact-form'>
+            <form onSubmit={handleSubmit} className='contact-form'>
               <h3>Send me a message</h3>
               <div className='contact-form-top'>
                 <div>
                   <label for='name'>Name</label>
-                  <input type='text' for='name' id='name' placeholder='your name...'></input>
+                  <input name='name' type='text' for='name' id='name' placeholder='your name...' required></input>
                 </div>
                 <div>
                   <label for='email'>Email</label>
-                  <input type='email' for='email' id='email' placeholder='your email...'></input>
+                  <input name='email' type='email' for='email' id='email' placeholder='your email...' required></input>
                 </div>
               </div>
               <label for='msg'>Message</label>
-              <textarea type='text' for='msg' id='msg' placeholder='your message...'></textarea>
-              <button className='form-button button'>
+              <textarea name='msg' type='text' for='msg' id='msg' placeholder='your message...' required></textarea>
+              <button className='form-button button' type='submit'>
                 <span>Send</span>
                 <BsArrowRightCircle /> 
               </button>
-            </section>
+            </form>
             <section className='contact-info'>
               <img src='./Media/TestPhoto.jpg' alt='Portrait of Kevin' /> 
               <ul>

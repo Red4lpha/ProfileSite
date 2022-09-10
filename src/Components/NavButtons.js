@@ -8,7 +8,7 @@ export const NavButtons = () => {
       <li><a href='/'>skills</a></li>
       <li><a href='/'>projects</a></li>
       <li><a href='/'>contact</a></li>
-  </ul>
+    </ul>
   )
 }
 

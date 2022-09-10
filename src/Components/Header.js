@@ -52,9 +52,7 @@ const Header = ({ setHeaderHeight }) => {
 					<StyledNav>	
 						<NavButtons />
 					</StyledNav>
-					<StyledSocialIcons>
-						<SocialIcons />
-					</StyledSocialIcons>
+					
 					<StyledMobileButton 
 					onClick={() => setMobileMenuOpened(!mobileMenuOpened)} 
 					mobileMenuOpened={mobileMenuOpened}>
